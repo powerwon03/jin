@@ -1,0 +1,16 @@
+{
+  "name": "yujin-diary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "유진이 생일 축하 & 둘만의 교환일기",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.9.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

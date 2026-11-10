@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api?p=/api/:path*" },
+    { "source": "/uploads/:path*", "destination": "/api?p=/uploads/:path*" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(html|js|css)",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+    }
+  ]
+}
